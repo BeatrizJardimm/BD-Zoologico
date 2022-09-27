@@ -25,28 +25,49 @@
 #### Relação de informações a serem extraídas:
 <br>
 
-1. Média da idade dos visitantes
-2.	Moda da idade dos visitantes
-3.	Quantidade de visitantes em determinada hora
-4.	Dia da semana com mais visitantes
-5.	Tempo médio de visita por visitante
-6.	Média de satisfação dos visitantes
-7.	Média da idade dos funcionários
-8.	Sexo predominante entre os funcionários
-9.	Média do tempo de trabalho dos funcionários
-10.	Porcentagem das espécies que são venenosas
-11.	Porcentagem de espécies aquáticas e terrestres
-12.	Porcentagem de animais aquáticos vindos de uma certa região
-13.	Porcentagem de animais terrestres vindos de uma certa região
-14.	Quantidade de animais de uma espécie
-15.	Média da idade dos animais de uma espécie
-16.	Porcentagem de fêmeas e machos em determinada espécie
-17.	Porcentagem de animais doentes (por espécie)
-18.	Quantidade de espécies carnívoras, herbívoras e onívoras
-19.	Média do peso dos animais adultos de cada espécie
-20.	Quantidade de alimento consumida por categoria (carne, folhas e ração)
-21.	Encontrar o nome científico de todos os animais
-22.	Encontrar quais cargos estão disponíveis
+1.  Média da idade dos visitantes;
+<br>
+2.	Moda da idade dos visitantes;
+<br>
+3.	Quantidade de visitantes em determinada hora;
+<br>
+4.	Dia da semana com mais visitantes;
+<br>
+5.	Tempo médio de visita por visitante;
+<br>
+6.	Média de satisfação dos visitantes;
+<br>
+7.	Média da idade dos funcionários;
+<br>
+8.	Sexo predominante entre os funcionários;
+<br>
+9.	Média do tempo de trabalho dos funcionários;
+<br>
+10.	Porcentagem das espécies que são venenosas;
+<br>
+11.	Porcentagem de espécies aquáticas e terrestres;
+<br>
+12.	Porcentagem de animais aquáticos vindos de uma certa região;
+<br>
+13.	Porcentagem de animais terrestres vindos de uma certa região;
+<br>
+14.	Quantidade de animais de uma espécie;
+<br>
+15.	Média da idade dos animais de uma espécie;
+<br>
+16.	Porcentagem de fêmeas e machos em determinada espécie;
+<br>
+17.	Porcentagem de animais doentes (por espécie);
+<br>
+18.	Quantidade de espécies carnívoras, herbívoras e onívoras;
+<br>
+19.	Média do peso dos animais adultos de cada espécie;
+<br>
+20.	Quantidade de alimento consumida por categoria (carne, folhas e ração);
+<br>
+21.	Encontrar o nome científico de todos os animais;
+<br>
+22.	Encontrar quais cargos estão disponíveis.
 
 #### Diagrama Entidade Relacionamento (DER):
 

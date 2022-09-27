@@ -7,6 +7,7 @@
 </div>
 
 ## Cenário <img src="./midia/ryanQ.jpg" alt="Pam de The Office" width="60" height="60" align="right">
+<br>
 
 <p align="justify">
     Banco de dados desenvolvido para um zoológico composto por espécies vindas de várias regiões diferentes do planeta. Os animais são de grande importância, portanto, é preciso recolher dados tanto da espécie (região de origem, nome científico, estilo de alimentação, se é venenosa  etc.), quanto de cada animal (tamanho, peso, se possui alguma doença, entre outros). A quantidade de alimento que o zoológico precisa comprar para esses animais também é uma informação importante, sendo assim, é preciso considerar essas quantidades.
@@ -15,10 +16,69 @@
 </p>
 
 ## Características do projeto <img src="./midia/pamQ.jpg" alt="Pam de The Office" width="60" height="60" align="right">
+<br>
 
 <p align="justify">
     O projeto é composto pelo arquivo BD-Zoológico.sql que apresenta a construção do banco de dados utilizando **MYSQL** e ao final, algumas análises feitas com base nos dados inseridos (a partir da linha 186). Já a pasta "midia" é composta por todas as imagens utilizadas no arquivo que você está lendo agora!
 </p>
+
+#### Relação de informações a serem extraídas:
+1-	Média da idade dos visitantes
+2-	Moda da idade dos visitantes
+3-	Quantidade de visitantes em determinada hora
+4-	Dia da semana com mais visitantes
+5-	Tempo médio de visita por visitante
+6-	Média de satisfação dos visitantes
+7-	Média da idade dos funcionários
+8-	Sexo predominante entre os funcionários
+9-	Média do tempo de trabalho dos funcionários
+10-	Porcentagem das espécies que são venenosas
+11-	Porcentagem de espécies aquáticas e terrestres
+12-	Porcentagem de animais aquáticos vindos de uma certa região
+13-	Porcentagem de animais terrestres vindos de uma certa região
+14-	Quantidade de animais de uma espécie
+15-	Média da idade dos animais de uma espécie
+16-	Porcentagem de fêmeas e machos em determinada espécie
+17-	Porcentagem de animais doentes (por espécie)
+18-	Quantidade de espécies carnívoras, herbívoras e onívoras
+19-	Média do peso dos animais adultos de cada espécie
+20-	Quantidade de alimento consumida por categoria (carne, folhas e ração)
+21-	Encontrar o nome científico de todos os animais
+22-	Encontrar quais cargos estão disponíveis
+
+#### Diagrama Entidade Relacionamento (DER):
+
+<div align="center">
+
+![Diagrama Entidade Relacionamento](./midia/der.png)
+
+</div>
+
+#### Dependências funcionais:
+
+id_animal → data_nasc, genero
+id_especie → {nome_cient, is_venenosa, dieta, re_origem}
+nome_cient → nome_pop
+mes → {carne_comp, folha_comp, racao_comp}
+cpf → {full_name, data_nasc, data_admissao}
+cargo → salario
+id_visitante → {full_name, data_nasc}
+data_visita → dia_semana
+
+#### Modelo lógico:
+Animal(id_animal, id_especie, peso, tamanho, genero, data_nasc, is_doente)
+Especie(id_especie, nome_cient, is_venenosa, dieta)
+NomeEspecie(nome_cient, nome_pop)
+Aquaticos(id_especie, tipo_agua, re_origem)
+Terrestres(id_especie, bioma, re_origem)
+EstoqueMensalC(mes, carne_comp, carne_disp)
+EstoqueMensalF(mes, folha_comp, folha_disp)
+EstoqueMensalR(mes, racao_comp, racao_disp)
+Funcionarios(cpf, cargo, full_name, data_nasc, telefone, email, endereco, data_admissao, sexo)
+Salarios(cargo, salario)
+Visitantes(id_visitante, full_name, data_nasc, email)
+Visitas(id_visitante, data_visita, ini_visita, fim_visita, nota)
+Dia(data_visita, dia_semana)
 
 ## <img src="./midia/dwightQ.jpg" alt="Dwight de The Office" width="60" height="60" align="right"> Como criar uma cópia do projeto
 

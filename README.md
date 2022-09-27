@@ -19,32 +19,33 @@
 <br>
 
 <p align="justify">
-    O projeto é composto pelo arquivo BD-Zoológico.sql que apresenta a construção do banco de dados utilizando **MYSQL** e ao final, algumas análises feitas com base nos dados inseridos (a partir da linha 186). Já a pasta "midia" é composta por todas as imagens utilizadas no arquivo que você está lendo agora!
+    O projeto é composto pelo arquivo BD-Zoológico.sql que apresenta a construção do banco de dados utilizando <b>MYSQL</b> e ao final, algumas análises feitas com base nos dados inseridos (a partir da linha 186). Já a pasta "midia" é composta por todas as imagens utilizadas no arquivo que você está lendo agora!
 </p>
 
 #### Relação de informações a serem extraídas:
-1-	Média da idade dos visitantes
-2-	Moda da idade dos visitantes
-3-	Quantidade de visitantes em determinada hora
-4-	Dia da semana com mais visitantes
-5-	Tempo médio de visita por visitante
-6-	Média de satisfação dos visitantes
-7-	Média da idade dos funcionários
-8-	Sexo predominante entre os funcionários
-9-	Média do tempo de trabalho dos funcionários
-10-	Porcentagem das espécies que são venenosas
-11-	Porcentagem de espécies aquáticas e terrestres
-12-	Porcentagem de animais aquáticos vindos de uma certa região
-13-	Porcentagem de animais terrestres vindos de uma certa região
-14-	Quantidade de animais de uma espécie
-15-	Média da idade dos animais de uma espécie
-16-	Porcentagem de fêmeas e machos em determinada espécie
-17-	Porcentagem de animais doentes (por espécie)
-18-	Quantidade de espécies carnívoras, herbívoras e onívoras
-19-	Média do peso dos animais adultos de cada espécie
-20-	Quantidade de alimento consumida por categoria (carne, folhas e ração)
-21-	Encontrar o nome científico de todos os animais
-22-	Encontrar quais cargos estão disponíveis
+<br>
+1.	Média da idade dos visitantes
+2.	Moda da idade dos visitantes
+3.	Quantidade de visitantes em determinada hora
+4.	Dia da semana com mais visitantes
+5.	Tempo médio de visita por visitante
+6.	Média de satisfação dos visitantes
+7.	Média da idade dos funcionários
+8.	Sexo predominante entre os funcionários
+9.	Média do tempo de trabalho dos funcionários
+10.	Porcentagem das espécies que são venenosas
+11.	Porcentagem de espécies aquáticas e terrestres
+12.	Porcentagem de animais aquáticos vindos de uma certa região
+13.	Porcentagem de animais terrestres vindos de uma certa região
+14.	Quantidade de animais de uma espécie
+15.	Média da idade dos animais de uma espécie
+16.	Porcentagem de fêmeas e machos em determinada espécie
+17.	Porcentagem de animais doentes (por espécie)
+18.	Quantidade de espécies carnívoras, herbívoras e onívoras
+19.	Média do peso dos animais adultos de cada espécie
+20.	Quantidade de alimento consumida por categoria (carne, folhas e ração)
+21.	Encontrar o nome científico de todos os animais
+22.	Encontrar quais cargos estão disponíveis
 
 #### Diagrama Entidade Relacionamento (DER):
 
@@ -55,29 +56,49 @@
 </div>
 
 #### Dependências funcionais:
-
+<br>
 id_animal → data_nasc, genero
+<br>
 id_especie → {nome_cient, is_venenosa, dieta, re_origem}
+<br>
 nome_cient → nome_pop
+<br>
 mes → {carne_comp, folha_comp, racao_comp}
+<br>
 cpf → {full_name, data_nasc, data_admissao}
+<br>
 cargo → salario
+<br>
 id_visitante → {full_name, data_nasc}
+<br>
 data_visita → dia_semana
 
 #### Modelo lógico:
+<br>
 Animal(id_animal, id_especie, peso, tamanho, genero, data_nasc, is_doente)
+<br>
 Especie(id_especie, nome_cient, is_venenosa, dieta)
+<br>
 NomeEspecie(nome_cient, nome_pop)
+<br>
 Aquaticos(id_especie, tipo_agua, re_origem)
+<br>
 Terrestres(id_especie, bioma, re_origem)
+<br>
 EstoqueMensalC(mes, carne_comp, carne_disp)
+<br>
 EstoqueMensalF(mes, folha_comp, folha_disp)
+<br>
 EstoqueMensalR(mes, racao_comp, racao_disp)
+<br>
 Funcionarios(cpf, cargo, full_name, data_nasc, telefone, email, endereco, data_admissao, sexo)
+<br>
 Salarios(cargo, salario)
+<br>
 Visitantes(id_visitante, full_name, data_nasc, email)
+<br>
 Visitas(id_visitante, data_visita, ini_visita, fim_visita, nota)
+<br>
 Dia(data_visita, dia_semana)
 
 ## <img src="./midia/dwightQ.jpg" alt="Dwight de The Office" width="60" height="60" align="right"> Como criar uma cópia do projeto

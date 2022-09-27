@@ -24,7 +24,8 @@
 
 #### Relação de informações a serem extraídas:
 <br>
-1.	Média da idade dos visitantes
+
+1. Média da idade dos visitantes
 2.	Moda da idade dos visitantes
 3.	Quantidade de visitantes em determinada hora
 4.	Dia da semana com mais visitantes
@@ -116,7 +117,7 @@ $ git clone hhttps://github.com/BeatrizJardimm/BD-Zoologico.git
 
 Agora você tem uma cópia do projeto em sua máquina! :)
 
-*Eu utilizei o **MySQL Workbench**, e a partir [desse artigo](https://www.devmedia.com.br/instalando-e-configurando-a-nova-versao-do-mysql/25813) você pode configurar tal IDE pra executar arquivos na linguagem Python.
+*Eu utilizei o **MySQL Workbench**, e a partir [desse artigo](https://www.devmedia.com.br/instalando-e-configurando-a-nova-versao-do-mysql/25813) você pode configurar tal IDE.
 
 ## <img src="./midia/jim.jpg" alt="Jim de The Office" width="60" height="60" align="right"> Como contribuir
 

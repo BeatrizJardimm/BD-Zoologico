@@ -23,7 +23,6 @@
 </p>
 
 #### Relação de informações a serem extraídas:
-<br>
 
 1.  Média da idade dos visitantes;
 2.	Moda da idade dos visitantes;
@@ -57,7 +56,7 @@
 </div>
 
 #### Dependências funcionais:
-<br>
+
 id_animal → data_nasc, genero
 <br>
 id_especie → {nome_cient, is_venenosa, dieta, re_origem}
@@ -75,7 +74,7 @@ id_visitante → {full_name, data_nasc}
 data_visita → dia_semana
 
 #### Modelo lógico:
-<br>
+
 Animal(id_animal, id_especie, peso, tamanho, genero, data_nasc, is_doente)
 <br>
 Especie(id_especie, nome_cient, is_venenosa, dieta)
